@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Link } from "react";
 
 class Header extends Component {
   render() {
@@ -8,19 +8,19 @@ class Header extends Component {
           <nav>
             <ul>
               <li>
-                <a href="#">MENU</a>
+                <Link href="#">MENU</Link>
               </li>
               <li>
-                <a href="#">PORTFOLIO</a>
+                <Link href="#">PORTFOLIO</Link>
               </li>
               <li className="active">
-                <a href="#">HOME</a>
+                <Link href="#">HOME</Link>
               </li>
               <li>
-                <a href="#">ABOUT US</a>
+                <Link href="#">ABOUT US</Link>
               </li>
               <li>
-                <a href="#">CONTACT US</a>
+                <Link href="#">CONTACT US</Link>
               </li>
             </ul>
           </nav>
@@ -31,19 +31,19 @@ class Header extends Component {
         <div className="navbar_overlay">
           <ul>
             <li>
-              <a href="#">MENU</a>
+              <Link href="#">MENU</Link>
             </li>
             <li>
-              <a href="#">PORTFOLIO</a>
+              <Link href="#">PORTFOLIO</Link>
             </li>
             <li className="active">
-              <a href="#">HOME</a>
+              <Link href="#">HOME</Link>
             </li>
             <li>
-              <a href="#">ABOUT US</a>
+              <Link href="#">ABOUT US</Link>
             </li>
             <li>
-              <a href="#">CONTACT US</a>
+              <Link href="#">CONTACT US</Link>
             </li>
           </ul>
         </div>
