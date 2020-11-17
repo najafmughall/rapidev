@@ -1,55 +1,68 @@
-import React, { Component, Link } from "react";
+import React, { useState } from "react";
 
-class Header extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <Link href="#">MENU</Link>
-              </li>
-              <li>
-                <Link href="#">PORTFOLIO</Link>
-              </li>
-              <li className="active">
-                <Link href="#">HOME</Link>
-              </li>
-              <li>
-                <Link href="#">ABOUT US</Link>
-              </li>
-              <li>
-                <Link href="#">CONTACT US</Link>
-              </li>
-            </ul>
-          </nav>
-          <div className="bars" id="bars">
-            <i className="fas fa-bars"></i>
-          </div>
-        </header>
-        <div className="navbar_overlay">
+const Header = () => {
+  const [navlinkOpen, navlinkToggle] = useState(false);
+
+  const handleNavigation = () => {
+    navlinkToggle(!navlinkOpen);
+  };
+
+  const renderClasses = () => {
+    let classes = "navbar_overlay";
+    if (navlinkOpen) {
+      classes += " navbar_overlay_active";
+    }
+
+    return classes;
+  };
+
+  return (
+    <React.Fragment>
+      <header>
+        <nav>
           <ul>
             <li>
-              <Link href="#">MENU</Link>
+              <a href="#">MENU</a>
             </li>
             <li>
-              <Link href="#">PORTFOLIO</Link>
+              <a href="#">PORTFOLIO</a>
             </li>
             <li className="active">
-              <Link href="#">HOME</Link>
+              <a href="#">HOME</a>
             </li>
             <li>
-              <Link href="#">ABOUT US</Link>
+              <a href="#">ABOUT US</a>
             </li>
             <li>
-              <Link href="#">CONTACT US</Link>
+              <a href="#">CONTACT US</a>
             </li>
           </ul>
+        </nav>
+        <div onClick={handleNavigation} className="bars" id="bars">
+          <i className="fas fa-bars"></i>
         </div>
-      </React.Fragment>
-    );
-  }
-}
+      </header>
+      <div className={renderClasses()}>
+        <ul>
+          <li>
+            <a href="#">MENU</a>
+          </li>
+          <li>
+            <a href="#">PORTFOLIO</a>
+          </li>
+          <li className="active">
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default Header;
