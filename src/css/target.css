@@ -1,0 +1,31 @@
+.right_section .card_2 {
+  background: linear-gradient(180deg, #004396 0%, #001d38 100%);
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+
+.right_section .card_2 h6 {
+  font-size: 13px;
+}
+
+.right_section .card_2 p {
+  font-size: 11px;
+  text-align: justify;
+}
+
+.right_section .card_2 form input {
+  width: 100%;
+  background: linear-gradient(90deg, black 0%, #002a4f 50%, #3ba1ff 100%);
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 1px 8px 2px 8px;
+  font-size: 9px;
+}
+
+.right_section .card_2 form input::placeholder {
+  font-size: 12px;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.map_bottom_section .emoji_body {
+  background-color: white;
+}
+
+.map_bottom_section .emoji_body img {
+  width: 30px;
+  height: 30px;
+}
+
+.map_bottom_section .emoji_body h6 {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 7px;
+  padding-left: 7px;
+}

@@ -1,0 +1,44 @@
+.main_content {
+  margin-top: 5.2em;
+  height: 86.7vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .main_content {
+    height: 100%;
+  }
+}
+
+.main_content .card_1 {
+  background: linear-gradient(180deg, #004396 0%, #001d38 100%);
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+.card_1 .d-block {
+  font-size: 9px;
+}
+
+.pt-4 h6 {
+  font-size: 15px;
+}
+.pt-4 p {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.main_content .card_1 .text_vertically {
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+}
+
+.main_content .card_1 .text_vertically h6 {
+  width: 1px;
+  font-size: 15px;
+  word-wrap: break-word;
+  font-family: monospace;
+  /* this is just for good looks */
+}

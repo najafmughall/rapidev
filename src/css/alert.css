@@ -1,0 +1,55 @@
+.right_section .card_2 .alert_type {
+  position: absolute;
+}
+
+.right_section .card_2 .alert_type .icon_alert i {
+  color: #ff0037;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.right_section .card_2 .alert_type .icon_alert span {
+  display: inline-block;
+  padding-left: 5px;
+  position: relative;
+  top: -8px;
+}
+
+.right_section span {
+  font-size: 10px;
+  padding-bottom: 4px;
+}
+
+.right_section span:nth-child(3) {
+  font-size: 8px;
+}
+
+.right_section .img_radi img {
+  position: relative;
+  top: 7px;
+  left: -21px;
+  transform: scaleY(1.04);
+}
+
+@media screen and (max-width: 900px) {
+  .right_section .img_radi img {
+    transform: scale(0.5);
+    position: relative;
+    top: -23px !important;
+    left: -30px !important;
+  }
+}
+
+.right_section .update_section {
+  background: linear-gradient(90deg, black 0%, #002a4f 50%, #3ba1ff 100%);
+}
+
+@media screen and (max-width: 900px) {
+  .right_section .update_section {
+    margin-top: -70px;
+  }
+}
+
+.right_section .update_section h6 {
+  font-size: 9px;
+}
